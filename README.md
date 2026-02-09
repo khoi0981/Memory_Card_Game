@@ -2,7 +2,7 @@
 
 # Tài liệu hướng dẫn
 
-Link document: https://docs.google.com/document/d/1L2cXphc2E7A_dOAuZQgqErqq2izQkHjQLLD11fJeg/edit?tab=t.0
+Link document: https://docs.google.com/document/d/1L2cXphc2E7A_dOAuZQqqJErqq2izQkHjQlLD11LfJeg/edit?tab=t.0
 
 # Credit / Asset sử dụng
 - Background Pixel by Feony Labs  
