@@ -6,12 +6,15 @@ using TMPro;
 
 public class CardsController : MonoBehaviour
 {
+    [SerializeField] timer timer;
+    [SerializeField] GameOverScene gameOverScene;
     [SerializeField] Card cardPrefab;
     [SerializeField] Transform gridTransform;
     [SerializeField] Sprite[] sprites;
     [SerializeField] TMP_Text scoreText;
 
     int score = 0;
+
 
     private List <Sprite> spritePairs;
     
@@ -79,6 +82,11 @@ public class CardsController : MonoBehaviour
             Destroy(child.gameObject);
         }
 
+        if (timer != null)
+        {
+            timer.ResetTimer();
+        }
+
         PrepareSprite();
         CreatCard();
     }
@@ -127,6 +135,10 @@ public class CardsController : MonoBehaviour
     {
         scoreText.text = score.ToString();
     }
-
+       
+    public void GameOver()
+    {
+        gameOverScene.Setup(score);
+    }
 
 }
